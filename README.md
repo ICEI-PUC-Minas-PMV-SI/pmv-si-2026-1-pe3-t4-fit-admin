@@ -6,16 +6,15 @@
 
 `SEMESTRE: 3º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto se baseia em desenvolver um software de gestão de academias para ajudar administradores financeiros e funcionários da recepção a controlar pagamentos, entrada/saída de pessoas, Matrículas e informações pessoais dos alunos 
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Eduardo Pereira Oliveira 
+* Eric Oliveira Vila Real
+* Anderson Henrique Costa Carvalho 
+* Andrey Carlos Saraiva 
+  
 
 ## Orientador
 
