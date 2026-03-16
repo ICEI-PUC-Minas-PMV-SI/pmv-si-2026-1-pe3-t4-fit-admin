@@ -3,18 +3,18 @@
 Nesta parte do trabalho você deve detalhar a documentação dos requisitos do sistema proposto de acordo com as seções a seguir. Ressalta-se que aqui é utilizado como exemplo um sistema de gestão de cursos de aperfeiçoamento.
 
 ## 3.1 Objetivos deste documento
-Descrever e especificar as necessidades da Coordenação do Curso de Sistemas de Informação da PUC Minas que devem ser atendidas pelo projeto SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento.
+Descrever e especificar as necessidades administrativas e gerenciais que o setor de academias do Brasil enfrentam e que serão solucionadas pelo programa Fit-Admin
 
 ## 3.2 Escopo do produto
 
 ### 3.2.1 Nome do produto e seus componentes principais
-O produto será denominado SCCA – Sistema de Cadastro de Cursos de Aperfeiçoamento. Ele terá somente um componente (módulo) com os devidos elementos necessários à gestão de cursos.
+O produto será denominado Fit-Admin. Ele terá somente um componente (módulo) com os devidos elementos necessários à gestão de academias.
 
 ### 3.2.2 Missão do produto
-Gerenciar informações sobre a oferta de cursos de aperfeiçoamento, gerenciar a composição das turmas, alunos, professores e matrículas. 
+Gerenciar e armazenar informações financeiras como adimplencia e inadimplencia de pagamentos de mensalidades, meios de contatar os alunos e informações como plano escolhido pelo aluno, peso e altura. 
 
 ### 3.2.3 Limites do produto
-O SCCA não fornece nenhuma forma de avaliação de alunos, pagamento de parcelas do curso, pagamento a professore e agendamentos. O SCCA não contempla o atendimento a vários cursos de Sistemas de Informação de outras unidades da PUC Minas.
+O fit-Admin não armazena dados relacionados a ficha de exercicios dos alunos e nem informações como o horário ou profissional que acompanha o aluno.
 
 ### 3.2.4 Benefícios do produto
 
