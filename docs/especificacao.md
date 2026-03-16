@@ -18,12 +18,23 @@ O fit-Admin não armazena dados relacionados a ficha de exercicios dos alunos e 
 
 ### 3.2.4 Benefícios do produto
 
-| # | Benefício | Valor para o Cliente |
-|--------------------|------------------------------------|----------------------------------------|
-|1	| Facilidade no cadastro de dados |	Essencial |
-|2 | Facilidade na recuperação de informações | Essencial | 
-|3 | Segurança no cadastro de matrículas | Essencial | 
-|4	| Melhoria na comunicação com os alunos	| Recomendável | 
+| #  | Benefício                                         | Valor para o Cliente |
+|----|--------------------------------------------------|----------------------|
+| 1  | Facilidade no cadastro de dados                  | Essencial            |
+| 2  | Facilidade na recuperação de informações         | Essencial            |
+| 3  | Segurança no cadastro de matrículas              | Essencial            |
+| 4  | Melhoria na comunicação com os alunos            | Recomendável         |
+| 5  | Controle centralizado de pagamentos              | Essencial            |
+| 6  | Redução de erros no registro de dados financeiros| Essencial            |
+| 7  | Histórico completo de pagamentos dos alunos      | Essencial            |
+| 8  | Acesso rápido às informações dos alunos          | Essencial            |
+| 9  | Organização automática dos dados cadastrais      | Recomendável         |
+| 10 | Notificação de pagamentos pendentes              | Recomendável         |
+| 11 | Maior agilidade no atendimento na recepção       | Recomendável         |
+| 12 | Facilidade para atualizar dados pessoais         | Recomendável         |
+| 13 | Relatórios simples sobre pagamentos e matrículas | Recomendável         |
+| 14 | Maior confiabilidade no armazenamento de dados   | Essencial            |
+| 15 | Redução do uso de papel e registros manuais      | Opcional             |
 
 ## 3.3 Descrição geral do produto
 
