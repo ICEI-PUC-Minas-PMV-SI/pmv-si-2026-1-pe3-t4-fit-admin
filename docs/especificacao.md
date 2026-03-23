@@ -14,7 +14,7 @@ O produto será denominado Fit-Admin. Ele terá somente um componente (módulo) 
 Gerenciar e armazenar informações financeiras como adimplencia e inadimplencia de pagamentos de mensalidades, meios de contatar os alunos e informações como plano escolhido pelo aluno, peso e altura. 
 
 ### 3.2.3 Limites do produto
-O fit-Admin não armazena dados relacionados a ficha de exercicios dos alunos e nem informações como o horário ou profissional que acompanha o aluno.
+O fit-Admin não armazena dados relacionados a ficha de exercicios dos alunos e nem informações como o horário frequentado pelo aluno ou profissional que acompanha o aluno.
 
 ### 3.2.4 Benefícios do produto
 
@@ -23,7 +23,7 @@ O fit-Admin não armazena dados relacionados a ficha de exercicios dos alunos e 
 | 1  | Facilidade no cadastro de dados                  | Essencial            |
 | 2  | Facilidade na recuperação de informações         | Essencial            |
 | 3  | Segurança no cadastro de matrículas              | Essencial            |
-| 4  | Melhoria na comunicação com os alunos            | Recomendável         |
+| 4  | Melhoria na comunicação com os alunos            | Essencial         |
 | 5  | Controle centralizado de pagamentos              | Essencial            |
 | 6  | Redução de erros no registro de dados financeiros| Essencial            |
 | 7  | Histórico completo de pagamentos dos alunos      | Essencial            |
