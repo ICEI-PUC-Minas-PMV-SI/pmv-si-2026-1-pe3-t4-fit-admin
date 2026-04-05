@@ -42,27 +42,44 @@ O fit-Admin não armazena dados relacionados a ficha de exercicios dos alunos e 
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Gerenciar Curso de Aperfeiçoamento |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Cursos de Aperfeiçoamento |
-| RF2 |	Gerenciar Professor	| Processamento de Inclusão, Alteração, Exclusão e Consulta de professores |
-| RF3	| Gerenciar Matrícula |	Processamento de Inclusão, Alteração, Exclusão e Consulta de Matrículas de alunos em Cursos de Aperfeiçoamento |
-| ... |	...	| ... |
+| RF-01 | Cadastro de alunos | O sistema deve permitir o cadastro de novos alunos, incluindo nome, telefone e e-mail. |
+| RF-02 | Exclusão de cadastros | O sistema deve permitir a exclusão de cadastros de alunos que não frequentam mais a academia. |
+| RF-03 | Edição de informações | O sistema deve permitir a edição de informações dos alunos, como telefone, nome, e-mail. |
+| RF-04 | Busca de alunos | O sistema deve permitir a busca de alunos por nome, telefone ou e-mail. |
+| RF-05 | Listagem de alunos | O sistema deve exibir uma lista de todos os alunos cadastrados. |
+| RF-06 | Filtragem por plano | O sistema deve permitir a filtragem de alunos por plano (mensal, trimestral, anual). |
+| RF-07 | Autenticação de usuários | O sistema deve permitir o login de usuários (gestores e recepcionistas) com senha. |
+| RF-08 | Alteração de senha | O sistema deve permitir a alteração de senha dos usuários (gestores e recepcionistas). |
+| RF-09 | Mensagens de confirmação | O sistema deve exibir uma mensagem de confirmação ao cadastrar, editar ou excluir um aluno. |
+| RF-10 | Validação de campos | O sistema deve validar campos obrigatórios durante o cadastro (ex.: nome e telefone). |
+| RF-11 | Exportação CSV | O sistema deve permitir a exportação da lista de alunos para um arquivo CSV. |
+| RF-12 | Impressão de lista | O sistema deve permitir a impressão da lista de alunos. |
 
 ### 3.3.2 Requisitos Não Funcionais
 
 | Código | Requisito Não Funcional (Restrição) |
 |--------------------|------------------------------------|
-| RNF1 | O ambiente operacional a ser utilizado é o Windows XP. |
-| RNF2 | O sistema deverá executar em um computador configurado com uma impressora de tecnologia laser ou de jato de tinta, a ser usada para impressão dos relatórios. |
-| RNF3 |	Segurança	O produto deve restringir o acesso por meio de senhas individuais para o usuário. |
-| ... |	... |	... |
+| RNF-01 | O sistema deve ser responsivo, funcionando corretamente em dispositivos móveis e desktops. |
+| RNF-02 | O sistema deve ser compatível com os principais navegadores (Chrome, Firefox, Edge e Safari). |
+| RNF-03 | O sistema deve ser publicado em um ambiente público, como GitHub Pages ou um servidor web. |
+| RNF-04 | O sistema deve ter um bom nível de contraste entre texto e fundo, garantindo acessibilidade. |
+| RNF-05 | O sistema deve carregar em menos de 3 segundos, mesmo com até 500 cadastros. |
+| RNF-06 | O sistema deve armazenar os dados dos alunos no LocalStorage do navegador. |
+| RNF-07 | O sistema deve garantir a persistência dos dados no navegador, mesmo após o fechamento da aba. |
+| RNF-08 | O sistema deve exibir mensagens claras de confirmação ou erro após ações do usuário. |
+| RNF-09 | Segurança: O sistema deve restringir o acesso por meio de autenticação com senha individual para cada usuário. |
+| RNF-12 | Sistema Operacional: O sistema deve funcionar em Windows 10, Windows 11 e macOS Monterey ou superior. |
+| RNF-14 | Requisitos de Hardware: O sistema deve funcionar em computadores com no mínimo 2GB de RAM e 100MB de espaço livre em disco. |
+| RNF-15 | Requisitos de Hardware: O dispositivo deve possuir conexão com a internet para primeira sincronização dos dados. |
+| RNF-16 | Disponibilidade: O sistema deve estar disponível 24 horas por dia, 7 dias por semana no ambiente de produção. |
+| RNF-18 | Usabilidade: A interface deve ser intuitiva, com navegação clara e terminologia compreensível para usuários sem experiência técnica. |
 
 ### 3.3.3 Usuários 
 
 | Ator | Descrição |
 |--------------------|------------------------------------|
-| Coordenador |	Usuário gerente do sistema responsável pelo cadastro e manutenção de cursos de aperfeiçoamento. Possui acesso geral ao sistema. |
-| Secretaria |	Usuário responsável por registros de alunos, professores, turmas e gerência de matrículas. |
-| ... |	... |	... |
+| Gestor de Academia | Usuário responsável pela administração e organização do estabelecimento. Possui acesso geral ao sistema para gerenciar cadastros de alunos, consultar informações e visualizar relatórios. |
+| Recepcionista | Usuário responsável pelo atendimento e contato direto com os alunos. Pode cadastrar, buscar, editar e consultar informações dos alunos de forma rápida e eficiente. |
 
 ## 3.4 Modelagem do Sistema
 
