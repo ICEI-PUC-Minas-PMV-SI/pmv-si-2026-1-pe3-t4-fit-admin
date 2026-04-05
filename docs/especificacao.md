@@ -162,39 +162,28 @@ a) O Professor seleciona a opção de criar um treino.
 
 b) O Sistema solicita os dados do treino (exercícios, séries, repetições, carga, observações).
 c) O Professor informa os dados.
-
 d) O Sistema valida as informações.
-
 e) Se válidas, o treino é cadastrado para o aluno; caso contrário, o sistema solicita correção.
 
 Fluxo Alternativo (1): Alteração de Treino
 
 a) O Professor seleciona um treino existente.
-
 b) O Sistema apresenta os dados do treino.
-
 c) O Professor altera as informações desejadas.
-
 d) O Sistema valida e salva as alterações.
 
 Fluxo Alternativo (2): Exclusão de Treino
 
 a) O Professor seleciona um treino.
-
 b) O Professor solicita a exclusão.
-
 c) O Sistema verifica se o treino pode ser removido.
-
 d) Se possível, remove o treino; caso contrário, informa erro.
 
 Fluxo Alternativo (3): Consulta de Treino
 
 a) O Professor busca treinos por aluno.
-
 b) O Sistema apresenta a lista de treinos.
-
 c) O Professor seleciona um treino.
-
 d) O Sistema exibe os detalhes.
 
 Pós-condições:
