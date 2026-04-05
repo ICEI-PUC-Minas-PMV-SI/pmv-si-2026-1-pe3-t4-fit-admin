@@ -68,11 +68,10 @@ O fit-Admin não armazena dados relacionados a ficha de exercicios dos alunos e 
 | RNF-07 | O sistema deve garantir a persistência dos dados no navegador, mesmo após o fechamento da aba. |
 | RNF-08 | O sistema deve exibir mensagens claras de confirmação ou erro após ações do usuário. |
 | RNF-09 | Segurança: O sistema deve restringir o acesso por meio de autenticação com senha individual para cada usuário. |
-| RNF-12 | Sistema Operacional: O sistema deve funcionar em Windows 10, Windows 11 e macOS Monterey ou superior. |
-| RNF-14 | Requisitos de Hardware: O sistema deve funcionar em computadores com no mínimo 2GB de RAM e 100MB de espaço livre em disco. |
-| RNF-15 | Requisitos de Hardware: O dispositivo deve possuir conexão com a internet para primeira sincronização dos dados. |
-| RNF-16 | Disponibilidade: O sistema deve estar disponível 24 horas por dia, 7 dias por semana no ambiente de produção. |
-| RNF-18 | Usabilidade: A interface deve ser intuitiva, com navegação clara e terminologia compreensível para usuários sem experiência técnica. |
+| RNF-10 | Sistema Operacional: O sistema deve funcionar em Windows 10, Windows 11 e macOS Monterey ou superior. |
+| RNF-11 | Requisitos de Hardware: O dispositivo deve possuir conexão com a internet para primeira sincronização dos dados. |
+| RNF-12 | Disponibilidade: O sistema deve estar disponível 24 horas por dia, 7 dias por semana no ambiente de produção. |
+| RNF-13 | Usabilidade: A interface deve ser intuitiva, com navegação clara e terminologia compreensível para usuários sem experiência técnica. |
 
 ### 3.3.3 Usuários 
 
