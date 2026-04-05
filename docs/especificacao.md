@@ -140,6 +140,116 @@ d)	O Sistema apresenta os detalhes do professor no formulário de professores. <
 
 Pós-condições: Um professor foi inserido ou removido, seus dados foram alterados ou apresentados na tela.
 
+### Gerenciar Treinos dos Alunos (CSU02)
+Sumário: O Professor realiza a gestão (criação, alteração, exclusão e consulta) dos treinos dos alunos matriculados na academia.
+
+Ator Primário: Professor
+Ator Secundário: Aluno
+
+Pré-condições:
+O Professor deve estar autenticado no sistema.
+O aluno deve estar previamente cadastrado.
+
+Fluxo Principal:
+O Professor acessa o sistema e seleciona a opção de gerenciamento de treinos.
+O Sistema apresenta as operações disponíveis: criação, alteração, exclusão e consulta de treinos.
+O Professor seleciona a operação desejada ou opta por encerrar.
+O Sistema executa a operação escolhida.
+Caso o Professor deseje continuar, o fluxo retorna ao passo 2; caso contrário, o caso de uso é encerrado.
+Fluxo Alternativo (3): Criação de Treino
+
+a) O Professor seleciona a opção de criar um treino.
+
+b) O Sistema solicita os dados do treino (exercícios, séries, repetições, carga, observações).
+c) O Professor informa os dados.
+
+d) O Sistema valida as informações.
+
+e) Se válidas, o treino é cadastrado para o aluno; caso contrário, o sistema solicita correção.
+
+Fluxo Alternativo (1): Alteração de Treino
+
+a) O Professor seleciona um treino existente.
+
+b) O Sistema apresenta os dados do treino.
+
+c) O Professor altera as informações desejadas.
+
+d) O Sistema valida e salva as alterações.
+
+Fluxo Alternativo (2): Exclusão de Treino
+
+a) O Professor seleciona um treino.
+
+b) O Professor solicita a exclusão.
+
+c) O Sistema verifica se o treino pode ser removido.
+
+d) Se possível, remove o treino; caso contrário, informa erro.
+
+Fluxo Alternativo (3): Consulta de Treino
+
+a) O Professor busca treinos por aluno.
+
+b) O Sistema apresenta a lista de treinos.
+
+c) O Professor seleciona um treino.
+
+d) O Sistema exibe os detalhes.
+
+Pós-condições:
+O treino do aluno foi criado, alterado, removido ou consultado com sucesso.
+
+### Gerenciar Pagamentos (CSU03)
+Sumário: O setor financeiro realiza o controle de pagamentos dos alunos, incluindo registro, consulta e verificação de inadimplência.
+
+Ator Primário: Funcionário do Financeiro
+Ator Secundário: Aluno
+
+Pré-condições:
+O funcionário deve estar autenticado no sistema.
+O aluno deve estar cadastrado.
+
+Fluxo Principal:
+O Funcionário acessa o módulo financeiro.
+O Sistema apresenta as opções: registrar pagamento, consultar pagamentos, verificar inadimplência.
+O Funcionário seleciona uma opção ou encerra o caso de uso.
+O Sistema executa a operação.
+O fluxo retorna ao menu inicial ou é encerrado.
+
+Fluxo Alternativo (1): Registrar Pagamento
+
+a) O Funcionário seleciona um aluno.
+
+b) O Sistema apresenta os débitos pendentes.
+
+c) O Funcionário informa o pagamento (valor, data, forma de pagamento).
+
+d) O Sistema valida os dados.
+
+e) Se válidos, registra o pagamento e atualiza o status.
+
+Fluxo Alternativo (2): Consultar Pagamentos
+
+a) O Funcionário busca pagamentos por aluno ou período.
+
+b) O Sistema apresenta a lista de pagamentos.
+
+c) O Funcionário seleciona um registro.
+
+d) O Sistema exibe os detalhes.
+
+Fluxo Alternativo (3): Verificar Inadimplência
+
+a) O Funcionário solicita a lista de alunos inadimplentes.
+
+b) O Sistema gera a lista com base nos pagamentos em atraso.
+
+c) O Funcionário visualiza os alunos com pendências.
+
+Pós-condições:
+Os pagamentos foram registrados, consultados ou analisados corretamente.
+
 ### 3.4.3 Diagrama de Classes 
 
 A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a identificação do funcionário responsável pelo registro, bem com os dados do aluno e turmas. Para uma disciplina podemos ter diversas turmas, mas apenas um professor responsável por ela.
