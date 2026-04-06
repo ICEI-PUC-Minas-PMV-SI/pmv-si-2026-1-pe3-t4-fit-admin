@@ -79,6 +79,7 @@ O fit-Admin não armazena dados relacionados a ficha de exercicios dos alunos e 
 |--------------------|------------------------------------|
 | Gestor de Academia | Usuário responsável pela administração e organização do estabelecimento. Possui acesso geral ao sistema para gerenciar cadastros de alunos, consultar informações e visualizar relatórios. |
 | Recepcionista | Usuário responsável pelo atendimento e contato direto com os alunos. Pode cadastrar, buscar, editar e consultar informações dos alunos de forma rápida e eficiente. |
+| Professor/Instrutor | Usuário responsável pela criação do plano de terinamento tem contato direto com os alunos. Pode cadastrar, buscar, editar o plano de treinamento e consultar informações e histórico de treino dos alunos. |
 
 ## 3.4 Modelagem do Sistema
 
