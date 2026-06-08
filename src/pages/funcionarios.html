@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funcionários - Fit-Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/theme.css">
+  <link rel="stylesheet" href="../styles/dashboard.css">
+  <script src="../scripts/InputComponent.js" defer></script>
+  <script src="../scripts/auth.js"></script>
+  <link rel="stylesheet" href="../styles/funcionarios.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <header class="dashboard-header">
+      <button class="menu-btn"><span class="material-icons">menu</span></button>
+      <span class="dashboard-title">Fit-Admin</span>
+      <button class="logout-btn"><span class="material-icons">logout</span></button>
+    </header>
+    <nav class="dashboard-nav">
+      <a href="dashboard.html" class="nav-item">
+        <span class="material-icons">home</span>
+        <span>Dashboard</span>
+      </a>
+      <a href="pagamentos.html" class="nav-item">
+        <span class="material-icons">payments</span>
+        <span>Pagamentos</span>
+      </a>
+      <a href="treinos.html" class="nav-item">
+        <span class="material-icons">fitness_center</span>
+        <span>Treinos</span>
+      </a>
+      <a href="funcionarios.html" class="nav-item active">
+        <span class="material-icons">people</span>
+        <span>Funcionários</span>
+      </a>
+      <a href="alterar-senha.html" class="nav-item">
+        <span class="material-icons">lock_reset</span>
+        <span>Senha</span>
+      </a>
+    </nav>
+    <main class="dashboard-main">
+      <div class="dashboard-actions">
+        <h2>Funcionários</h2>
+        <button class="btn-white" id="btn-novo-funcionario">Novo</button>
+      </div>
+      <div class="funcionarios-grid" id="funcionarios-grid">
+      </div>
+    </main>
+  </div>
+
+  <div class="modal" id="modal-funcionario">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Novo Funcionário</h2>
+        <button class="close-btn"><span class="material-icons">close</span></button>
+      </div>
+      <form id="form-funcionario">
+        <input-component label="Nome" id="nome" name="nome" placeholder="Informe o nome do funcionário" required></input-component>
+        <input-component label="Email" type="email" id="email" name="email" placeholder="Informe o email do funcionário" required></input-component>
+        <input-component label="Senha" type="password" id="senha" name="senha" placeholder="Informe a senha" required></input-component>
+        <input-component label="Confirmar Senha" type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme a senha" required></input-component>
+        <button type="submit" class="btn-primary">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="../scripts/funcionarios.js"></script>
+</body>
+</html> 

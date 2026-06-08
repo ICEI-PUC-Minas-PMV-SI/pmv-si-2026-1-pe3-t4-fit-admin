@@ -1,0 +1,106 @@
+.management-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.management-form,
+.management-list {
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(25,25,25,0.06);
+}
+
+.management-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.management-form h3 {
+  margin: 0 0 0.6rem;
+  color: var(--color-primary);
+}
+
+.management-form label {
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.management-form input,
+.management-form select,
+.management-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-secondary);
+  border-radius: 6px;
+  font-family: var(--font-family-base);
+  font-size: 1rem;
+}
+
+.records-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.record-card {
+  border: 1px solid #ddd;
+  border-left: 5px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 1rem;
+  background: var(--color-white);
+}
+
+.record-card.status-pago {
+  border-left-color: var(--color-success);
+}
+
+.record-card.status-vencido {
+  border-left-color: var(--color-error);
+}
+
+.record-card.status-pendente {
+  border-left-color: var(--color-yellow-secondary);
+}
+
+.record-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.record-title {
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.record-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.7rem;
+  color: var(--color-secondary);
+}
+
+.record-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.record-actions .material-icons {
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+
+.record-actions .delete:hover {
+  color: var(--color-error);
+}
+
+@media (max-width: 800px) {
+  .management-layout {
+    grid-template-columns: 1fr;
+  }
+}

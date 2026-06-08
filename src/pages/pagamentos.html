@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamentos - Fit-Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/theme.css">
+  <link rel="stylesheet" href="../styles/dashboard.css">
+  <link rel="stylesheet" href="../styles/gestao.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <header class="dashboard-header">
+      <button class="menu-btn"><span class="material-icons">menu</span></button>
+      <span class="dashboard-title">Fit-Admin</span>
+      <button class="logout-btn"><span class="material-icons">logout</span></button>
+    </header>
+    <nav class="dashboard-nav">
+      <a href="dashboard.html" class="nav-item"><span class="material-icons">home</span><span>Dashboard</span></a>
+      <a href="pagamentos.html" class="nav-item active"><span class="material-icons">payments</span><span>Pagamentos</span></a>
+      <a href="treinos.html" class="nav-item"><span class="material-icons">fitness_center</span><span>Treinos</span></a>
+      <a href="funcionarios.html" class="nav-item admin-only"><span class="material-icons">people</span><span>Funcionários</span></a>
+      <a href="alterar-senha.html" class="nav-item"><span class="material-icons">lock_reset</span><span>Senha</span></a>
+    </nav>
+    <main class="dashboard-main">
+      <div class="dashboard-actions">
+        <h2>Pagamentos</h2>
+        <button class="btn-outline" id="exportar-pagamentos">Exportar CSV</button>
+      </div>
+      <section class="management-layout">
+        <form class="management-form" id="pagamento-form">
+          <h3>Registrar pagamento</h3>
+          <label for="aluno-id">Aluno</label>
+          <select id="aluno-id" required></select>
+          <label for="valor">Valor</label>
+          <input id="valor" type="number" min="0" step="0.01" placeholder="Ex: 120.00" required>
+          <label for="vencimento">Data de vencimento</label>
+          <input id="vencimento" type="date" required>
+          <label for="data-pagamento">Data de pagamento</label>
+          <input id="data-pagamento" type="date">
+          <label for="forma-pagamento">Forma de pagamento</label>
+          <select id="forma-pagamento" required>
+            <option value="">Selecione</option>
+            <option value="dinheiro">Dinheiro</option>
+            <option value="pix">Pix</option>
+            <option value="cartao">Cartão</option>
+            <option value="boleto">Boleto</option>
+          </select>
+          <label for="status">Status</label>
+          <select id="status" required>
+            <option value="pago">Pago</option>
+            <option value="pendente">Pendente</option>
+          </select>
+          <button class="btn-primary" type="submit">Registrar pagamento</button>
+        </form>
+        <section class="management-list">
+          <div class="filters-row">
+            <input class="search-input" id="busca-pagamento" type="text" placeholder="Buscar por aluno">
+            <input class="filter-select" id="periodo-inicio" type="date" aria-label="Início do período">
+            <input class="filter-select" id="periodo-fim" type="date" aria-label="Fim do período">
+            <select class="filter-select" id="status-filter">
+              <option value="">Todos os status</option>
+              <option value="pago">Pago</option>
+              <option value="pendente">Pendente</option>
+              <option value="vencido">Vencido</option>
+            </select>
+          </div>
+          <div id="pagamentos-lista" class="records-list"></div>
+        </section>
+      </section>
+    </main>
+  </div>
+  <script src="../scripts/auth.js"></script>
+  <script src="../scripts/app-data.js"></script>
+  <script src="../scripts/pagamentos.js"></script>
+</body>
+</html>

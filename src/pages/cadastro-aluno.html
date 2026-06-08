@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar/Editar Aluno - Fit-Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/theme.css">
+  <link rel="stylesheet" href="../styles/dashboard.css">
+  <script src="../scripts/InputComponent.js" defer></script>
+  <script src="../scripts/auth.js"></script>
+  <script src="../scripts/app-data.js"></script>
+  <link rel="stylesheet" href="../styles/cadastro-aluno.css">
+</head>
+<body>
+  <header class="dashboard-header">
+    <button class="menu-btn"><span class="material-icons">menu</span></button>
+    <span class="dashboard-title">Fit-Admin</span>
+    <span style="width:40px;"></span>
+  </header>
+  <div class="cadastro-container">
+    <button type="button" id="btn-voltar" class="button-back"><span class="material-icons">arrow_back</span>Voltar</button>
+    <div class="cadastro-title">Cadastrar/Editar Aluno</div>
+    <form class="cadastro-form" id="cadastroAlunoForm">
+      <div class="cadastro-photo">
+        <img id="cadastro-photo-preview" src="../assets/user-placeholder-form-student.jpg" alt="Foto do aluno" />
+        <input type="file" id="cadastro-photo" accept="image/*" style="display:none;" />
+        <button type="button" id="cadastro-upload-btn"><span class="material-icons">upload</span></button>
+      </div>
+      <input-component label="Nome" id="cadastro-nome" name="nome" placeholder="Informe o nome do aluno" required></input-component>
+      <input-component label="Matrícula" id="cadastro-matricula" name="matricula" placeholder="Informe a matrícula do aluno"  required></input-component>
+      <input-component label="E-mail" type="email" id="cadastro-email" name="email" placeholder="Informe o e-mail do aluno" required></input-component>
+      <label class="form-label" for="cadastro-plano">Plano</label>
+      <select id="cadastro-plano" class="form-select" required>
+        <option value="">Selecione o plano</option>
+        <option value="mensal">Mensal</option>
+        <option value="trimestral">Trimestral</option>
+        <option value="anual">Anual</option>
+      </select>
+      <label class="form-label" for="cadastro-status">Status</label>
+      <select id="cadastro-status" class="form-select" required>
+        <option value="ativo">Ativo</option>
+        <option value="inativo">Inativo</option>
+        <option value="inadimplente">Inadimplente</option>
+      </select>
+      <input-component label="Data de vencimento" id="cadastro-vencimento" name="vencimento" placeholder="Ex: 25/05"  required></input-component>
+      <input-component label="Peso" id="cadastro-peso" name="peso" placeholder="Ex: 82kg."  required></input-component>
+      <input-component label="Altura" id="cadastro-altura" name="altura" placeholder="Ex: 1.82m"  required></input-component>
+      <input-component label="Telefone" id="cadastro-telefone" name="telefone" placeholder="Ex: 869282028"  required></input-component>
+      <button class="cadastro-btn" type="submit">Cadastrar/Editar</button>
+    </form>
+  </div>
+  <script src="../scripts/cadastro-aluno.js"></script>
+</body>
+</html> 

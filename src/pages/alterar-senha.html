@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alterar Senha - Fit-Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/theme.css">
+  <link rel="stylesheet" href="../styles/dashboard.css">
+  <link rel="stylesheet" href="../styles/gestao.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <header class="dashboard-header">
+      <button class="menu-btn"><span class="material-icons">menu</span></button>
+      <span class="dashboard-title">Fit-Admin</span>
+      <button class="logout-btn"><span class="material-icons">logout</span></button>
+    </header>
+    <nav class="dashboard-nav">
+      <a href="dashboard.html" class="nav-item"><span class="material-icons">home</span><span>Dashboard</span></a>
+      <a href="pagamentos.html" class="nav-item"><span class="material-icons">payments</span><span>Pagamentos</span></a>
+      <a href="treinos.html" class="nav-item"><span class="material-icons">fitness_center</span><span>Treinos</span></a>
+      <a href="funcionarios.html" class="nav-item admin-only"><span class="material-icons">people</span><span>Funcionários</span></a>
+      <a href="alterar-senha.html" class="nav-item active"><span class="material-icons">lock_reset</span><span>Senha</span></a>
+    </nav>
+    <main class="dashboard-main">
+      <section class="management-layout">
+        <form class="management-form" id="senha-form">
+          <h3>Alterar senha</h3>
+          <label for="senha-atual">Senha atual</label>
+          <input id="senha-atual" type="password" required>
+          <label for="nova-senha">Nova senha</label>
+          <input id="nova-senha" type="password" required>
+          <label for="confirmar-senha">Confirmar nova senha</label>
+          <input id="confirmar-senha" type="password" required>
+          <button class="btn-primary" type="submit">Alterar senha</button>
+        </form>
+      </section>
+    </main>
+  </div>
+  <script src="../scripts/auth.js"></script>
+  <script src="../scripts/alterar-senha.js"></script>
+</body>
+</html>

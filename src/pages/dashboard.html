@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Fit-Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/theme.css">
+  <link rel="stylesheet" href="../styles/dashboard.css">
+</head>
+<body>
+	<div class="dashboard-container">
+  <header class="dashboard-header">
+    <button class="menu-btn"><span class="material-icons">menu</span></button>
+    <span class="dashboard-title">Fit-Admin</span>
+    <button class="logout-btn"><span class="material-icons">logout</span></button>
+  </header>
+  <nav class="dashboard-nav">
+    <a href="dashboard.html" class="nav-item active">
+      <span class="material-icons">home</span>
+      <span>Dashboard</span>
+    </a>
+    <a href="pagamentos.html" class="nav-item">
+      <span class="material-icons">payments</span>
+      <span>Pagamentos</span>
+    </a>
+    <a href="treinos.html" class="nav-item">
+      <span class="material-icons">fitness_center</span>
+      <span>Treinos</span>
+    </a>
+    <a href="funcionarios.html" class="nav-item">
+      <span class="material-icons">people</span>
+      <span>Funcionários</span>
+    </a>
+    <a href="alterar-senha.html" class="nav-item">
+      <span class="material-icons">lock_reset</span>
+      <span>Senha</span>
+    </a>
+  </nav>
+  <main class="dashboard-main">
+    <section class="metrics-grid" id="metrics-grid"></section>
+    <div class="dashboard-actions">
+      <h2>Alunos</h2>
+      <button class="btn-outline" id="exportar-btn">Exportar CSV</button>
+      <button class="btn-outline" id="imprimir-btn">Imprimir</button>
+      <button class="btn-white">Novo</button>
+    </div>
+    <div class="filters-row">
+      <input class="search-input" type="text" placeholder="Pesquisar por nome, telefone ou e-mail">
+      <select id="plano-filter" class="filter-select">
+        <option value="">Todos os planos</option>
+        <option value="mensal">Mensal</option>
+        <option value="trimestral">Trimestral</option>
+        <option value="anual">Anual</option>
+      </select>
+      <select id="status-filter" class="filter-select">
+        <option value="">Todos os status</option>
+        <option value="ativo">Ativo</option>
+        <option value="inativo">Inativo</option>
+        <option value="inadimplente">Inadimplente</option>
+      </select>
+    </div>
+    <div class="students-grid" id="students-grid">
+    </div>
+  </main>
+</div>
+<script src="../scripts/auth.js"></script>
+<script src="../scripts/app-data.js"></script>
+<script src="../scripts/dashboard.js"></script>
+</body>
+</html> 
