@@ -9,8 +9,12 @@ Ao final, os relatórios gerados por cada membro deverão ser disponibilizados a
 Material de apoio para esta etapa:
 
 
-[Avaliação_Heurística.xlsx](https://github.com/user-attachments/files/16501461/Avaliacao_Heuristica.xlsx) 
+[Avaliação_Heurística.xlsx](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2026-1-pe3-t4-fit-admin/blob/main/docs/Avaliacao_heuristica/Avaliacao_Heuristica_Compilado.xlsx) 
 
-[Relatório_de_Testes_com_Usuário.docx](https://github.com/user-attachments/files/16501456/Relatorio_de_Testes_com_Usuario.docx)
+[Relatório_de_Testes_com_Anderson_Henrique_Costa_Carvalho_Renato_Lima.docx](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2026-1-pe3-t4-fit-admin/blob/main/docs/Testes_com_usuario_FitAdmin/Relatorio_de_Testes_com_Usuario_FitAdmin - Anderson_Henrique_Costa_Carvalho_Renato_Lima.docx)
 
-[Relatório_de_Testes_com_Usuário_exemplo.docx](https://github.com/user-attachments/files/16501459/Relatorio_de_Testes_com_Usuario_exemplo.docx)
+[Relatório_de_Testes_com_Andrey_Carlos_Saraiva_Beatriz_Alves.docx](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2026-1-pe3-t4-fit-admin/blob/main/docs/Testes_com_usuario_FitAdmin/Relatorio_de_Testes_com_Usuario_FitAdmin - Andrey_Carlos_Saraiva_Beatriz_Alves.docx)
+
+[Relatório_de_Testes_com_Eduardo_Pereira_Oliveira_Carlos_Henrique.docx](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2026-1-pe3-t4-fit-admin/blob/main/docs/Testes_com_usuario_FitAdmin/Relatorio_de_Testes_com_Usuario_FitAdmin - Eduardo_Pereira_Oliveira_Carlos_Henrique.docx)
+
+[Relatório_de_Testes_com_Eric_Oliveira_Vila_Real_Mariana_Souza.docx](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2026-1-pe3-t4-fit-admin/blob/main/docs/Testes_com_usuario_FitAdmin/Relatorio_de_Testes_com_Usuario_FitAdmin - Eric_Oliveira_Vila_Real_Mariana_Souza.docx)
